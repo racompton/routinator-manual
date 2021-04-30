@@ -3,8 +3,8 @@
 Installation
 ============
 
-Getting started with Routinator is really easy by either installing a Debian
-and Ubuntu package, using Docker, or building from Cargo.
+Getting started with Routinator is really easy either building from Cargo,
+installing a Debian and Ubuntu package or using Docker.
 
 Quick Start with Debian and Ubuntu Packages
 -------------------------------------------
@@ -102,7 +102,7 @@ version, you can run:
 
 .. code-block:: bash
 
-   cargo install --git https://github.com/NLnetLabs/routinator.git --branch main
+   cargo install --git https://github.com/NLnetLabs/routinator.git  --branch main
 
 System Requirements
 -------------------
@@ -111,14 +111,14 @@ When choosing a system to run Routinator on, make sure you have 1GB of
 available memory and 1GB of disk space. This will give you ample margin for
 the RPKI repositories to grow over time, as adoption increases.
 
-Installing From Source
-----------------------
+Getting Started
+---------------
 
 There are three things you need to install and run Routinator: rsync, a C
 toolchain and Rust. You can install Routinator on any system where you can
 fulfil these requirements.
 
-You need rsync because some RPKI repositories still use it as its main
+You need rsync because most RPKI repositories currently use it as its main
 means of distribution. Some of the cryptographic primitives used by
 Routinator require a C toolchain. Lastly, you need Rust because that’s the
 programming language that Routinator has been written in.
@@ -157,7 +157,7 @@ Platform Support <https://forge.rust-lang.org/platform-support.html>`_
 page provides an overview of the various support levels.
 
 While some system distributions include Rust as system packages,
-Routinator relies on a relatively new version of Rust, currently 1.45 or
+Routinator relies on a relatively new version of Rust, currently 1.42 or
 newer. We therefore suggest to use the canonical Rust installation via a
 tool called :command:`rustup`.
 
@@ -185,19 +185,20 @@ The easiest way to get Routinator is to leave it to cargo by saying:
 
    cargo install --locked routinator
 
-If you want to try the main branch from the repository instead of a release
-version, you can run:
+If you want to try the main branch from the repository instead of a
+release version, you can run:
 
 .. code-block:: bash
 
    cargo install --git https://github.com/NLnetLabs/routinator.git --branch main
 
-If you want to update an installed version, you run the same command but add the
-``-f`` flag, a.k.a. force, to approve overwriting the installed version.
+If you want to update an installed version, you run the same command but
+add the ``-f`` flag, a.k.a. force, to approve overwriting the installed
+version.
 
-The command will build Routinator and install it in the same directory that
-cargo itself lives in, likely ``$HOME/.cargo/bin``. This means Routinator will
-be in your path, too.
+The command will build Routinator and install it in the same directory
+that cargo itself lives in, likely ``$HOME/.cargo/bin``. This means
+Routinator will be in your path, too.
 
 Notes
 -----
