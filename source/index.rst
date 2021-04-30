@@ -1,7 +1,7 @@
 .. _doc_routinator:
 
-Routinator
-==========
+Routinator 0.8.3 ‘Like and Subscribe’
+=====================================
 
 |docsupdated| |discord| |twitter|
 
