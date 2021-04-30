@@ -1,7 +1,7 @@
 .. _doc_routinator:
 
-Routinator
-==========
+Routinator 0.8.2 ‘Once More, with Feeling’
+==========================================
 
 |docsupdated| |discord| |twitter|
 
