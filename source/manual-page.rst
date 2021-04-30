@@ -5,10 +5,10 @@ Manual Page
 
 :command:`routinator` - RPKI relying party software
 
-:Date:       2021-02-02
+:Date:       2021-12-09
 :Author:     Martin Hoffmann
 :Copyright:  2019-2020 - NLnet Labs
-:Version:    0.8.3
+:Version:    0.8.2
 
 Synopsis
 --------

@@ -179,5 +179,4 @@ result is included.
    }
 
 If you run the HTTP service in daemon mode, this information is also available
-via the :ref:`user interface <doc_routinator_ui>` and at the ``/validity`` API
-endpoint.
+via the ``/validity`` API endpoint.
