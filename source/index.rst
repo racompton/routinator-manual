@@ -1,7 +1,7 @@
 .. _doc_routinator:
 
-Routinator – *main* branch
-==========================
+Routinator 0.9.0 Release Candidate 1
+====================================
 
 .. only:: html
 
