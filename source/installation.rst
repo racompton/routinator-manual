@@ -30,7 +30,7 @@ Quick Start
        In case you want to install Release Candidates as well, add one of the
        following lines. This is not recommended for production systems:
        
-       ..code-block:: text
+       .. code-block:: text
        
           deb [arch=amd64] https://packages.nlnetlabs.nl/linux/debian/ stretch-proposed main
           deb [arch=amd64] https://packages.nlnetlabs.nl/linux/debian/ buster-proposed main
