@@ -28,7 +28,8 @@ Quick Start
           deb [arch=amd64] https://packages.nlnetlabs.nl/linux/ubuntu/ focal main
 
        In case you want to install Release Candidates as well, add one of the
-       following lines. This is not recommended for production systems:
+       following lines instead. This is **not recommended** for production 
+       systems:
        
        .. code-block:: text
        
