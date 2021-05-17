@@ -27,6 +27,17 @@ Quick Start
           deb [arch=amd64] https://packages.nlnetlabs.nl/linux/ubuntu/ bionic main
           deb [arch=amd64] https://packages.nlnetlabs.nl/linux/ubuntu/ focal main
 
+       In case you want to install Release Candidates as well, add one of the
+       following lines. This is not recommended for production systems:
+       
+       ..code-block:: text
+       
+          deb [arch=amd64] https://packages.nlnetlabs.nl/linux/debian/ stretch-proposed main
+          deb [arch=amd64] https://packages.nlnetlabs.nl/linux/debian/ buster-proposed main
+          deb [arch=amd64] https://packages.nlnetlabs.nl/linux/ubuntu/ xenial-proposed main
+          deb [arch=amd64] https://packages.nlnetlabs.nl/linux/ubuntu/ bionic-proposed main
+          deb [arch=amd64] https://packages.nlnetlabs.nl/linux/ubuntu/ focal-proposed main
+       
        Then run the following commands:
 
        .. code-block:: text
@@ -90,7 +101,7 @@ Quick Start
           routinator init
           # Follow instructions provided
           routinator server --rtr 192.0.2.13:3323 --http 192.0.2.13:9556
-
+       
        If you have an older version of Rust and Routinator, you can update via:
 
        .. code-block:: text
@@ -98,13 +109,20 @@ Quick Start
           rustup update
           cargo install --locked --force routinator
 
+       If you want to install a Release Candidate or a specific version of 
+       Routinator, you can use the ``--version`` option: 
+      
+       .. code-block:: text
+
+          cargo install --locked --force routinator --version 0.9.0-rc1
+             
        If you want to try the main branch from the repository instead of a release
        version, you can run:
 
        .. code-block:: text
 
           cargo install --git https://github.com/NLnetLabs/routinator.git --branch main
-
+          
 System Requirements
 -------------------
 
