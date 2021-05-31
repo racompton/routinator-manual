@@ -51,9 +51,8 @@ manager.
        Then run the following commands to add the public key and update the
        repository list:
 
-       .. code-block:: text
+       .. code-block:: bash
 
-          sudo apt update && apt-get install -y gnupg2
           wget -qO- https://packages.nlnetlabs.nl/aptkey.asc | sudo apt-key add -
           sudo apt update
 
